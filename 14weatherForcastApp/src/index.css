@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-day {
+  background: linear-gradient(to right, #84b9fa, #a9b5c3);
+}
+
+.bg-night {
+  background: linear-gradient(to right, #4c4e53, #17191e);
+}
