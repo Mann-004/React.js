@@ -1,0 +1,42 @@
+.logo h1 {
+    letter-spacing: 0px;
+    line-height: 2.5vw;
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    width: 5vw;
+    font-family: futura;
+
+
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+    padding-right: 3rem;
+
+}
+
+.links {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 0 20px;
+    font-family: Gilroy;
+}
+.icons{
+    display: flex;
+    font-size: 2vw;
+    gap: 3rem;
+}

@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+    overflow-x: hidden;
+}
+*::selection{
+    background-color:black;
+    color: #fff;
+}
+:root{
+  --primary-color:#f7f7f7
+}
+
+main[data-scroll-container] {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+[data-scroll-section] {
+  will-change: transform;
+}
