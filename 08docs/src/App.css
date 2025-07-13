@@ -1,0 +1,233 @@
+/* styles.css */
+.app-container {
+  position: relative;
+  width: 100%;
+  background-color: #e5e5e5; /* Tailwind: bg-gray-200 */
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.main-title {
+  position: absolute;
+  font-size: 12rem;
+  font-weight: 600;
+  color: #3f3f46; /* Tailwind: text-zinc-700 */
+  line-height: 1;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Arial Nova", sans-serif;
+  z-index: 0;
+}
+
+.cards-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  padding: 24px;
+  margin-top: 10rem;
+  z-index: 1;
+  box-sizing: border-box;
+}
+/* Form Styles */
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.form-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: #4b5563; /* Tailwind: bg-gray-600 */
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-family: "Arial Nova", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  margin-top: 1rem;
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.form-button {
+  margin-top: 1rem;
+  height: 40px;
+  background-color: #15803d; /* Tailwind: bg-green-700 */
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form-button:hover {
+  background-color: #166534; /* Slightly darker on hover */
+}
+/* Card.css */
+
+.card {
+  width: 370px;
+  background-color: #27272a;
+  border-radius: 24px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  /* Remove any fixed height or stretching */
+  align-self: flex-start;
+}
+
+
+.card-header {
+  display: flex;
+  align-items: start;
+}
+
+.card-input {
+  margin-top: 8px;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  background-color: #27272a;
+  border: 2px solid transparent;
+  outline: none;
+  width: 85%;
+  color: white;
+}
+
+.card-input.editable {
+  border-color: #22c55e; /* Tailwind: border-green */
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-update {
+  color: #facc15; /* Tailwind: text-yellow-500 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-update:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-delete {
+  color: #ef4444; /* Tailwind: text-red-500 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card-textarea {
+  margin-top: 8px;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  background-color: #27272a;
+  border: 2px solid transparent;
+  outline: none;
+  width: 100%;
+  color: white;
+  resize: none;
+  overflow: hidden;
+  line-height: 1.5;
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+  min-height: 48px;
+  transition: height 0.2s ease-in-out;
+}
+
+.card-textarea.editable {
+  border-color: #22c55e;
+}
+
+
+.card-textarea.editable {
+  border-color: #22c55e; /* Tailwind: border-green */
+}
+
+
+
+.masonry-grid {
+  display: flex;
+  margin-left: -16px; /* gutter size offset */
+  width: auto;
+  padding: 24px;
+}
+
+.masonry-column {
+  padding-left: 16px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.masonry-column > .card {
+  margin-bottom: 16px;
+}
+
+/* Optional: Center page */
+.main-wrapper {
+  background-color: #e5e7eb;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12rem;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #3f3f46;
+  z-index: 0;
+  font-family: 'Arial Nova', sans-serif;
+}
+
+.card {
+  display: block;
+  width: 100%;
+  background: #27272a;
+  padding: 20px;
+  color: white;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
