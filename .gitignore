@@ -1,0 +1,21 @@
+
+# Ignore all node_modules across the project
+node_modules/
+
+# Ignore all uploads folders anywhere inside the project
+uploads/
+
+# Ignore dotenv files anywhere
+*.env
+
+# Ignore build output
+dist/
+build/
+
+node_modules/
+dist/
+build/
+uploads/
+*.zip
+*.mp4
+*.jpg
